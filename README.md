@@ -55,11 +55,11 @@ Clear Status:
 
 This command will not change your presence, and will set your status to "On my 15min break" with a sleeping emoji, for a duration of 15 minutes: 
 
-aws lambda invoke --function-name slackProfileSet --payload '{ "body": "away: n color: blue status: On my 15min break emoji: :sleeping: duration: 900 " }'  
+- aws lambda invoke --function-name slackProfileSet --payload '{ "body": "away: n color: blue status: On my 15min break emoji: :sleeping: duration: 900 " }' response.json
 
 The same can be accomplished with the function call:  
 
-aws lambda invoke --function-name slackProfileSet --payload '{ "body": "color: blue action: 15" }' response.json  
+- aws lambda invoke --function-name slackProfileSet --payload '{ "body": "color: blue action: 15" }' response.json  
 
 Only if the function code has the following action set under the chosen color in the ACTION_DICT:  
 
@@ -106,11 +106,11 @@ Clear Status:
 
 This command will not change your presence, and will set your status to "On my 15min break" with a sleeping emoji, for a duration of 15 minutes: 
 
-/<SLACK_APP_NAME> away: n color: blue status: On my 15min break emoji: :sleeping: duration: 900  
+- /<SLACK_APP_NAME> away: n color: blue status: On my 15min break emoji: :sleeping: duration: 900  
 
 The same can be accomplished with the function call:  
 
-/<SLACK_APP_NAME> color: blue action: 15  
+- /<SLACK_APP_NAME> color: blue action: 15  
 
 Only if the function code has the following action set under the chosen color in the ACTION_DICT:  
 

@@ -33,7 +33,7 @@ Set Status (default presence: auto):
 - aws lambda invoke --function-name slackProfileSet --payload '{ "body": "color: ... status: ... emoji: ... duration: ... " }' response.json  
 
 Set Presence:   
-  aws lambda invoke --function-name slackProfileSet --payload '{ "body": "away: ... color: ... " }' response.json  
+- aws lambda invoke --function-name slackProfileSet --payload '{ "body": "away: ... color: ... " }' response.json  
   
 Set Status and Presence:   
 - aws lambda invoke --function-name slackProfileSet --payload '{ "body": "away: ... color: ... status: ... emoji: ... duration: ... " }' response.json  
